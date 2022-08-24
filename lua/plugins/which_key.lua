@@ -7,8 +7,6 @@ local wk = require("which-key")
 --  * <leader>fn new file
 --  * <leader>fe edit file
 -- and hide <leader>1
-local opts = { noremap=true, silent=true}
-local bufopts = { noremap=true, silent=true, buffer=bufnr }
 
 
 wk.register({
@@ -40,3 +38,15 @@ wk.register({
       r = {"<cmd>Telescope lsp_references<cr>", "References"},
     },
   }, { prefix = " " })
+
+wk.register({
+    u = {
+      '<cmd>undo<cr>',
+      "undo",
+    },
+    r = {
+        '<cmd>redo<cr>',
+        "redo",
+    }
+  }, { prefix = " " })
+
