@@ -21,6 +21,11 @@ g.nord_italic = false
 g.mapleader = ' '
 go.timeoutlen = 0
 
-vim.cmd [[colorscheme nord]]
+vim.cmd("colorscheme nord")
 
--- require('nord').set()
+vim.cmd("set number")
+-- Transparent background 
+vim.cmd("highlight Normal guibg=none")
+--Open tree
+vim.cmd("NvimTreeOpen")
+
