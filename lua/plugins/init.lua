@@ -64,5 +64,10 @@ return require('packer').startup(function()
     }
 
     use "terrortylor/nvim-comment"
-
+    
+    use {
+	    'crusj/bookmarks.nvim',
+	    branch = 'main',
+	    requires = { 'kyazdani42/nvim-web-devicons' }
+    }
 end)

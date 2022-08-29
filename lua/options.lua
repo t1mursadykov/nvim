@@ -32,3 +32,5 @@ vim.cmd("highlight Normal guibg=none")
 vim.cmd("NvimTreeOpen")
 
 require('nvim_comment').setup()
+require("bookmarks").setup()
+
