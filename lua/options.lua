@@ -21,11 +21,14 @@ g.nord_italic = false
 g.mapleader = ' '
 go.timeoutlen = 0
 
+opt.undofile = true
+opt.clipboard = "unnamedplus"
+
 vim.cmd("colorscheme nord")
 
-vim.cmd("set number")
 -- Transparent background 
 vim.cmd("highlight Normal guibg=none")
 --Open tree
 vim.cmd("NvimTreeOpen")
 
+require('nvim_comment').setup()

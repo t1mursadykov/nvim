@@ -39,11 +39,25 @@ wk.register({
     r = {
         '<cmd>redo<cr>',
         "redo",
-    }
+    },
   }, { prefix = " " })
 
 wk.register({
-    z = {
+    c = {
+        '<cmd>yank<cr>',
+        "copy",
+    }
+}, {prefix = " ", mode = "v"})
+
+wk.register({
+    C = {
+        '<cmd>CommentToggle<cr>',
+        "comment/uncomment",
+    },
+}, {prefix = " ", mode = "nv"})
+
+wk.register({
+    P = {
         name = "Packer",
         c = { "<cmd>PackerCompile<cr>", "Compile" },
         i = { "<cmd>PackerInstall<cr>", "Install" },
@@ -54,7 +68,7 @@ wk.register({
 }, { prefix = " " })
 
 wk.register({
-    l = {
+    L = {
         name = "LSP",
         s = { "<cmd>LspStart<cr>", "Start" },
         i = { "<cmd>LspInfo<cr>", "Info" },
@@ -63,3 +77,7 @@ wk.register({
         l = { "<cmd>LspLog<cr>", "Log" },
       },
 }, { prefix = " " })
+
+
+    
+
