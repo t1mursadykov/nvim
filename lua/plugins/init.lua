@@ -59,9 +59,11 @@ return require('packer').startup(function()
     use 'bryanmylee/vim-colorscheme-icons'
 
     use {
-        'romgrk/barbar.nvim',
-        requires = {'kyazdani42/nvim-web-devicons'}
+        'akinsho/bufferline.nvim',
+        tag = "v2.*", 
+        requires = 'kyazdani42/nvim-web-devicons'
     }
+
 
     use "terrortylor/nvim-comment"
     

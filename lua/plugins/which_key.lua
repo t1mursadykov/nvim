@@ -35,12 +35,11 @@ wk.register({
     },
     b = {
         name = "buffer",
-        P = {"<cmd>BufferPin<cr>", "pin"},
-        q = {"<cmd>BufferClose<cr>", "close"},
-        n = {"<cmd>BufferNext<cr>", "next"},
-        p = {"<cmd>BufferPrevious<cr>", "previous"},
-        m = {"<cmd>BufferMoveNext<cr>", "move next"},
-        M = {"<cmd>BufferMovePrevious<cr>", "move previous"},
+        P = {"<cmd>BufferLineTogglePin<cr>", "pin"},
+        n = {"<cmd>BufferLineCycleNext<cr>", "next"},
+        p = {"<cmd>BufferLineCyclePrev<cr>", "previous"},
+        m = {"<cmd>BufferLineMoveNext<cr>", "move next"},
+        M = {"<cmd>BufferLineMovePrev<cr>", "move previous"},
         
     },
     Q = {
