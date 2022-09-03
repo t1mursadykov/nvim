@@ -30,7 +30,9 @@ vim.cmd("colorscheme nord")
 vim.cmd("highlight Normal guibg=none")
 --Open tree
 vim.cmd("NvimTreeOpen")
+vim.cmd("COQnow")
 
 require('nvim_comment').setup()
 require("bookmarks").setup()
+
 

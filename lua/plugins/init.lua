@@ -10,6 +10,15 @@ return require('packer').startup(function()
     use 'BurntSushi/ripgrep' --telescope
 
     use 'neovim/nvim-lspconfig'
+    use {
+        'weilbith/nvim-code-action-menu',
+        after = 'coc.nvim',
+        cmd = 'CodeActionMenu',
+        requires = 'xiyaowong/coc-code-action-menu.nvim',
+        config = function()
+            require 'coc-code-action-menu'
+        end,
+    }
 
     -- Airline
     use {
@@ -72,4 +81,10 @@ return require('packer').startup(function()
 	    branch = 'main',
 	    requires = { 'kyazdani42/nvim-web-devicons' }
     }
+
+    use 'sindrets/winshift.nvim'
+
+    use 'arkav/lualine-lsp-progress'
+
+
 end)

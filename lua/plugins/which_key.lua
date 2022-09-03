@@ -42,6 +42,24 @@ wk.register({
         M = {"<cmd>BufferLineMovePrev<cr>", "move previous"},
         
     },
+    C = {
+        "<cmd>CommentToggle<cr>",
+        "Comment",
+    },
+    W = {
+        name = "win shift",
+        l = {"<cmd>WinShift left<cr>", "left"},
+        r = {"<cmd>WinShift right<cr>", "right"},
+        u = {"<cmd>WinShift up<cr>", "up"},
+        d = {"<cmd>WinShift down<cr>", "down"},
+
+        L = {"<cmd>WinShift far_left<cr>", "far left"},
+        R = {"<cmd>WinShift far_right<cr>", "far right"},
+        U = {"<cmd>WinShift far_up<cr>", "far up"},
+        D = {"<cmd>WinShift far_down<cr>", "far down"},
+ 
+        s = {"<cmd>WinShift swap<cr>", "swap"},
+    },
     Q = {
         name = "Coq",
         d = {"<cmd>COQdeps<cr>", "deps"},
