@@ -42,6 +42,12 @@ wk.register({
         M = {"<cmd>BufferLineMovePrev<cr>", "move previous"},
         
     },
+    S = {
+        name = "Symbols outline",
+        t = {"<cmd>SymbolsOutline<cr>", "toggle"},
+        o = {"<cmd>SymbolsOutlineOpen<cr>", "open"},
+        c = {"<cmd>SymbolsOutlineClose<cr>", "close"},
+    },
     C = {
         "<cmd>CommentToggle<cr>",
         "Comment",
@@ -65,14 +71,6 @@ wk.register({
         d = {"<cmd>COQdeps<cr>", "deps"},
         s = {"<cmd>COQnow<cr>", "start"},
         n = {"<cmd>COQsnips<cr>", "snips"},
-    },
-    P = {
-        name = "Packer",
-        c = { "<cmd>PackerCompile<cr>", "Compile" },
-        i = { "<cmd>PackerInstall<cr>", "Install" },
-        s = { "<cmd>PackerSync<cr>", "Sync" },
-        S = { "<cmd>PackerStatus<cr>", "Status" },
-        u = { "<cmd>PackerUpdate<cr>", "Update" },
     },
     L = {
         name = "LSP",

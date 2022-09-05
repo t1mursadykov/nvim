@@ -10,6 +10,8 @@ return require('packer').startup(function()
     use 'BurntSushi/ripgrep' --telescope
 
     use 'neovim/nvim-lspconfig'
+    use 'onsails/lspkind.nvim'
+    use "ray-x/lsp_signature.nvim"
     use {
         'weilbith/nvim-code-action-menu',
         after = 'coc.nvim',
@@ -85,6 +87,7 @@ return require('packer').startup(function()
     use 'sindrets/winshift.nvim'
 
     use 'arkav/lualine-lsp-progress'
-
+    
+    use 'simrat39/symbols-outline.nvim'
 
 end)

@@ -7,6 +7,7 @@ require('plugins.tree')
 require('plugins.telescope')
 require('plugins.which_key')
 require('plugins.winshift')
+require('plugins.lspkind')
 
 require('options')
 
