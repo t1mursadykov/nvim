@@ -14,8 +14,8 @@ wk.register({
         }, -- additional options for creating the keymap
     },
     s = {
-        name = "search", -- optional group name
-        f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
+        name = "search",
+        f = { "<cmd>Telescope find_files<cr>", "Find File" },
         g = {"<cmd>Telescope live_grep<cr>", "Live Grep"}
     },
     j = {
@@ -24,6 +24,7 @@ wk.register({
       D = {vim.lsp.buf.definition, "Jump to declaration"},
       i = {vim.lsp.buf.implementation, "Jump to implementation"},
       r = {"<cmd>Telescope lsp_references<cr>", "References"},
+      s = {"<cmd>Telescope lsp_document_symbols<cr>", "Symbols"}
     },
     u = {
       '<cmd>undo<cr>',
@@ -42,12 +43,6 @@ wk.register({
         M = {"<cmd>BufferLineMovePrev<cr>", "move previous"},
         
     },
-    S = {
-        name = "Symbols outline",
-        t = {"<cmd>SymbolsOutline<cr>", "toggle"},
-        o = {"<cmd>SymbolsOutlineOpen<cr>", "open"},
-        c = {"<cmd>SymbolsOutlineClose<cr>", "close"},
-    },
     C = {
         "<cmd>CommentToggle<cr>",
         "Comment",
@@ -65,20 +60,6 @@ wk.register({
         D = {"<cmd>WinShift far_down<cr>", "far down"},
  
         s = {"<cmd>WinShift swap<cr>", "swap"},
-    },
-    Q = {
-        name = "Coq",
-        d = {"<cmd>COQdeps<cr>", "deps"},
-        s = {"<cmd>COQnow<cr>", "start"},
-        n = {"<cmd>COQsnips<cr>", "snips"},
-    },
-    L = {
-        name = "LSP",
-        s = { "<cmd>LspStart<cr>", "Start" },
-        i = { "<cmd>LspInfo<cr>", "Info" },
-        r = { "<cmd>LspRestart<cr>", "Restart" },
-        S = { "<cmd>LspStop<cr>", "Stop" },
-        l = { "<cmd>LspLog<cr>", "Log" },
     },
 }, { prefix = " " })
 

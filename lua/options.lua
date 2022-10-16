@@ -34,6 +34,5 @@ vim.cmd("COQnow")
 
 require('nvim_comment').setup()
 require("bookmarks").setup()
-require("symbols-outline").setup()
 
 
